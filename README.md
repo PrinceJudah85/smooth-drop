@@ -1,2 +1,2 @@
-smooth-drop
+Smooth Drop
 ===========
