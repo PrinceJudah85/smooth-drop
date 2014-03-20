@@ -1,4 +1,4 @@
 Smooth Drop
 ===========
 
-A simple CSS extension for smoother Bootstrap drop-downs
+A simple snippet of CSS for adding smooth "cubic-bezier" animation to Bootstrap drop-downs.
