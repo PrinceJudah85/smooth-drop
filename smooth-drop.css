@@ -13,6 +13,10 @@
   -moz-transition: all 150ms cubic-bezier(0.175, 0.885, 0.305, 1.115);
   -ms-transition: all 150ms cubic-bezier(0.175, 0.885, 0.305, 1.115);
   transition: all 150ms cubic-bezier(0.175, 0.885, 0.305, 1.115);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .dropdown-menu li {
   visibility: hidden;
