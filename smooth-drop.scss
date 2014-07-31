@@ -1,13 +1,13 @@
 //
 // Smooth Drop
-// v0.3.0
+// v0.3.2
 // Open sourced under MIT license by @jasonmelgoza
 // ------------------------------
 
 // MIXINS
 
 // Transform
-@mixin transform($parameters) {
+@mixin sd-transform($parameters) {
   -webkit-transform: $parameters;
      -moz-transform: $parameters;
       -ms-transform: $parameters;
@@ -15,7 +15,7 @@
 }
 
 // Transform origin
-@mixin transform-origin($origin) {
+@mixin sd-transform-origin($origin) {
   -webkit-transform-origin:$origin;
      -moz-transform-origin:$origin;
       -ms-transform-origin:$origin;
@@ -23,7 +23,7 @@
 }
 
 // Transition
-@mixin transition($style: all, $length: 1s, $easing: cubic-bezier) {
+@mixin sd-transition($style: all, $length: 1s, $easing: cubic-bezier) {
   -webkit-transition: $style $length $easing;
      -moz-transition: $style $length $easing;
       -ms-transition: $style $length $easing;
@@ -31,30 +31,29 @@
 }
 
 // Backface
-@mixin backface-visibility($visibility) {
+@mixin sd-backface-visibility($visibility) {
   -webkit-backface-visibility: $visibility;
      -moz-backface-visibility: $visibility;
       -ms-backface-visibility: $visibility;
           backface-visibility: $visibility;
 }
 
-
 // STYLES
 
 .dropdown-menu {
   display: block;
   opacity: 0;
-  @include transform-origin(top);
-  @include transform(scale(1, 0));
-  @include transition(all, 170ms, cubic-bezier(0.175, 0.885, 0.210, 1.175));
-  @include backface-visibility(hidden);
+  @include sd-transform-origin(top);
+  @include sd-transform(scale(1, 0));
+  @include sd-transition(all, 170ms, cubic-bezier(0.175, 0.885, 0.210, 1.175));
+  @include sd-backface-visibility(hidden);
   li {
     visibility: hidden;
   }
 }
 
 .open > .dropdown-menu {
-  @include transform(scale(1, 1));
+  @include sd-transform(scale(1, 1));
   opacity: 1;
   li {
     visibility: visible;
@@ -62,5 +61,5 @@
 }
 
 .dropup .dropdown-menu {
-  @include transform-origin(bottom);
+  @include sd-transform-origin(bottom);
 }
