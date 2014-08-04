@@ -9,10 +9,10 @@
   -moz-transform: scale(1, 0);
   -ms-transform: scale(1, 0);
   transform: scale(1, 0);
-  -webkit-transition: all 170ms cubic-bezier(0.175, 0.885, 0.21, 1.175);
-  -moz-transition: all 170ms cubic-bezier(0.175, 0.885, 0.21, 1.175);
-  -ms-transition: all 170ms cubic-bezier(0.175, 0.885, 0.21, 1.175);
-  transition: all 170ms cubic-bezier(0.175, 0.885, 0.21, 1.175);
+  -webkit-transition: transform 170ms cubic-bezier(0.175, 0.885, 0.21, 1.175);
+  -moz-transition: transform 170ms cubic-bezier(0.175, 0.885, 0.21, 1.175);
+  -ms-transition: transform 170ms cubic-bezier(0.175, 0.885, 0.21, 1.175);
+  transition: transform 170ms cubic-bezier(0.175, 0.885, 0.21, 1.175);
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;

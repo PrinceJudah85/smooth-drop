@@ -23,7 +23,7 @@
 }
 
 // Transition
-@mixin sd-transition($style: all, $length: 1s, $easing: cubic-bezier) {
+@mixin sd-transition($style: transform, $length: 1s, $easing: cubic-bezier) {
   -webkit-transition: $style $length $easing;
      -moz-transition: $style $length $easing;
       -ms-transition: $style $length $easing;
@@ -45,7 +45,7 @@
   opacity: 0;
   @include sd-transform-origin(top);
   @include sd-transform(scale(1, 0));
-  @include sd-transition(all, 170ms, cubic-bezier(0.175, 0.885, 0.210, 1.175));
+  @include sd-transition(transform, 170ms, cubic-bezier(0.175, 0.885, 0.210, 1.175));
   @include sd-backface-visibility(hidden);
   li {
     visibility: hidden;
