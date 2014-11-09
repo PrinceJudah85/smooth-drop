@@ -2,13 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="smooth-drop.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <style media="screen">
       body {
+        background-color: hsla(207, 100%, 45%, 1);
         -webkit-font-smoothing: antialiased;
+        color: #fff;
+      }
+      body a {
+        color: #fff;
       }
       .container {
         width: auto;
@@ -20,7 +25,7 @@
         text-align: center;
       }
       h1 {
-        padding-top: 170px;
+        padding-top: 27vh;
         margin-bottom: 8px;
         font-size: 72px;
         font-weight: 100;
@@ -29,10 +34,30 @@
         left: 50%;
         margin-left: -85px;
       }
+      .btn-group .btn-default {
+        color: #fff;
+        background-color: hsla(207, 100%, 45%, 1);
+        border-width: 1px;
+        border-color: #fff;
+        transition: background-color 0.125s cubic-bezier(.32, 1, .53, .8);
+      }
+      .btn-group .btn-default:hover {
+        color: #fff;
+        background-color: hsla(0, 0%, 0%, 0.05);
+        border-color: #fff;
+      }
+      .btn-group.open .btn-default,
+      .btn-group.open .btn-default:active,
+      .btn-group.open .btn-default:focus {
+        color: hsla(207, 100%, 45%, 1);
+        background-color: #fff;
+        border-color: #fff;
+        box-shadow: none;
+      }
       .dropdown-menu>li>a:hover,
       .dropdown-menu>li>a:focus {
         color: #fff;
-        background-color: #428bca;
+        background-color: hsla(207, 100%, 45%, 0.90);
       }
     </style>
     <title>Bootstrap - Smooth Drop</title>
