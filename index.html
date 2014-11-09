@@ -8,7 +8,7 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <style media="screen">
       body {
-        background-color: #007EE5;
+        background-color: hsla(207, 100%, 45%, 1);
         -webkit-font-smoothing: antialiased;
         color: #fff;
       }
@@ -34,19 +34,30 @@
         left: 50%;
         margin-left: -85px;
       }
-      .btn-default,
-      .btn-default:hover,
-      .btn-default:focus,
-      .btn-default:active {
-        background-color: #007EE5;
-        border-width: 2px;
-        border-color: #fff;
+      .btn-group .btn-default {
         color: #fff;
+        background-color: hsla(207, 100%, 45%, 1);
+        border-width: 1px;
+        border-color: #fff;
+        transition: background-color 0.125s cubic-bezier(.32, 1, .53, .8);
+      }
+      .btn-group .btn-default:hover {
+        color: #fff;
+        background-color: hsla(0, 0%, 0%, 0.05);
+        border-color: #fff;
+      }
+      .btn-group.open .btn-default,
+      .btn-group.open .btn-default:active,
+      .btn-group.open .btn-default:focus {
+        color: hsla(207, 100%, 45%, 1);
+        background-color: #fff;
+        border-color: #fff;
+        box-shadow: none;
       }
       .dropdown-menu>li>a:hover,
       .dropdown-menu>li>a:focus {
         color: #fff;
-        background-color: #007EE5;
+        background-color: hsla(207, 100%, 45%, 0.90);
       }
     </style>
     <title>Bootstrap - Smooth Drop</title>
