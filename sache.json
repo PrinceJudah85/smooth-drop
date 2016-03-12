@@ -1,5 +1,5 @@
 {
   "name": "Smooth Drop",
-  "description": "A simple CSS extension for smoother Bootstrap drop-downs",
+  "description": "A simple CSS extension for smoother Bootstrap dropdowns menus",
   "tags": ["ui", "buttons", "bootstrap", "dropdown", "menu", "animation", "transitions", "transform", "cubic-bezier"]
 }

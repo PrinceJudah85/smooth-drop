@@ -1,0 +1,39 @@
+{
+  "name": "smooth-drop",
+  "description": "A CSS module for adding smooth cubic-bezier animation to Bootstrap dropdown menus.",
+  "version": "0.3.5",
+  "author": {
+    "name": "Jason Melgoza",
+    "email": "jasonmelgoza@gmail.com",
+    "url": "http://jmelgoza.com"
+  },
+  "style": "src/smooth-drop.css",
+  "files": [
+    "src",
+    "css"
+  ],
+  "keywords": [
+    "Sass",
+    "css",
+    "animation",
+    "Bootstrap",
+    "dropdowns"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonmelgoza/smooth-drop.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jasonmelgoza/smooth-drop/issues"
+  },
+  "homepage": "https://github.com/jasonmelgoza/smooth-drop#readme",
+  "scripts": {
+    "build:css": "postcss --use autoprefixer src/*.css -d css/",
+    "build": "npm run build:css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "postcss-cli": "^2.5.1"
+  }
+}
