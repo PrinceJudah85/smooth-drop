@@ -1,5 +1,6 @@
 Smooth Drop
 ===========
+*NOT MAKING ANY CHANGES TO THIS CODE. ONLY GETTING FAMILIAR WITH GITHUB*
 
 A CSS module for adding *smooth* "cubic-bezier" animation to Bootstrap dropdown menus.
 
